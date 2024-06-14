@@ -78,10 +78,17 @@ class Profile extends StatelessWidget {
                     borderRadius: BorderRadius.circular(39),
                   ),
                 ),
-                child: const Text('Edit Profile'),
+                child: const Text('Edit'),
               ),
             ),
           ),
+          ListView(
+            children: [
+              ListTile(
+                leading: Icon(Icons.add_to_photos_sharp),
+              )
+            ],
+          )
         ],
       ),
     );

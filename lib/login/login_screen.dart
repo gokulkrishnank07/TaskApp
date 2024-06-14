@@ -91,7 +91,7 @@ class LoginScreen extends StatelessWidget {
                     child: TextField(
                       style: TextStyle(),
                       focusNode: FocusNode(),
-                      //obscureText: true,
+                      obscureText: true,
                       decoration: InputDecoration(
                         labelText: 'Password',
                         labelStyle: TextStyle(fontWeight: FontWeight.bold),
