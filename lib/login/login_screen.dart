@@ -28,7 +28,7 @@ class LoginScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.topLeft,
                   child: Container(
-                    alignment: const Alignment(-1, 2),
+                    alignment: const Alignment(-1, 6),
                     child: Text(
                       'Login',
                       textAlign: TextAlign.left,
@@ -39,7 +39,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 40.0),
+                const SizedBox(height: 29.0),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -57,7 +57,6 @@ class LoginScreen extends StatelessWidget {
                   ),
                   child: Container(
                     child: TextField(
-                      obscureText: true,
                       decoration: InputDecoration(
                         labelText: 'Enter Your Email',
                         labelStyle: TextStyle(fontWeight: FontWeight.bold),
@@ -106,7 +105,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 const SizedBox(
                   height: 20.0,
-                  width: 50,
+                  width: 40,
                 ),
                 Container(
                   child: SizedBox(

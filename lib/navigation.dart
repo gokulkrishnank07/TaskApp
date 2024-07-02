@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/dashboard.dart';
-import 'package:flutter_application_1/login/profile.dart';
+import 'package:flutter_application_1/chat_dashboard/dashboard.dart';
+import 'package:flutter_application_1/profile_page/profile.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({super.key});
@@ -12,65 +12,20 @@ class Navigation extends StatefulWidget {
 class _NavigationState extends State<Navigation> {
   int myIndex = 0;
   List<Widget> widgetList = [
-    Login(),
-    Profile(),
+    const Login(),
+    const Profile(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
-        children: widgetList,
         index: myIndex,
+        children: widgetList,
       ),
-      bottomNavigationBar:
-          // BottomAppBar(
-          //   shape: const CircularNotchedRectangle(),
-          //   notchMargin: 5.0,
-          //   clipBehavior: Clip.antiAlias,
-          //   child: SizedBox(
-          //     height: kBottomNavigationBarHeight,
-          //     child: Row(
-          //       mainAxisSize: MainAxisSize.max,
-          //       mainAxisAlignment: MainAxisAlignment.spaceAround,
-          //       children: <Widget>[
-          //         IconButton(
-          //           icon: const Icon(Icons.home),
-          //           onPressed: () {
-          //             Navigator.push(
-          //               context,
-          //               MaterialPageRoute(
-          //                 builder: (context) => Profile(),
-          //               ),
-          //             );
-          //             setState(() {});
-          //           },
-          //         ),
-          //         IconButton(
-          //           icon: const Icon(Icons.search),
-          //           onPressed: () {
-          //             setState(() {});
-          //           },
-          //         ),
-          //         IconButton(
-          //           icon: const Icon(Icons.favorite_border_outlined),
-          //           onPressed: () {
-          //             setState(() {});
-          //           },
-          //         ),
-          //         IconButton(
-          //           icon: const Icon(Icons.account_circle_outlined),
-          //           onPressed: () {
-          //             setState(() {});
-          //           },
-          //         )
-          //       ],
-          //     ),
-          //   ),
-          // ),
-          BottomNavigationBar(
+      bottomNavigationBar: BottomNavigationBar(
         //showSelectedLabels: false,
         showSelectedLabels: false,
-        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         type: BottomNavigationBarType.fixed,
         onTap: (index) {
           setState(() {
