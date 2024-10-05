@@ -332,8 +332,8 @@ class _CreateTaskPageState extends State<CreateTaskPage> {
     
 
     final _createTasks =
-        ClientTasksModel(description: _description, tasks: _task, taskDate:_selectedDate,priority: priority);
-    addTasks(_createTasks);
+        ClientTasksModel(description: _description,tasks:_task, taskDate:_selectedDate,priority:priority);
+    addTasks(_createTasks); 
     return Navigator.pop(context);
   }
 }
